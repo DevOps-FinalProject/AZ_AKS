@@ -1,0 +1,10 @@
+Run FE AKS on Azure:
+
+1. terraform output kube_config > ~/.kube/config-terraform-aks-demo
+2. export KUBECONFIG=~/.kube/config-terraform-aks-demo:~/.kube/config
+3. az aks get-credentials --resource-group kt-k8s-resources --name kt-k8s
+4. receive output: "Merged "kt-k8s" as current context in /Users/krutik/.kube/config"
+5. az aks browse --resource-group kt-k8s-resources --name kt-k8s
+6. kubectl apply -f fe.yml
+7. kubectl get pods
+8. kubectl get svc
