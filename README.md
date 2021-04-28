@@ -1,5 +1,9 @@
-# Steps to deploy FE over Azure:
+# Uber DevOps Project Part-3:
 
+## Prerequisite:
+1. Make sure to build docker-image of front-end using updated load-balancer ip of backend before continuing to follow the below process of deploying front-end over Azure
+
+## Steps to deploy FE over Azure:
 1. Clone the repository
 2. Run the below terraform commands to create resources over AZ:
     1. terraform init
